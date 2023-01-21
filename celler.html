@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/png" href="https://www.celer.network/favicon-32x32.png" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous" />
+    <link href="d2a32fa9436af505b094.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;700&display=swap" rel="stylesheet">
+    <!--    Font Awesome-->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <script src="https://kit.fontawesome.com/c3b711e95e.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <title>Celer </title>
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/sign-in/">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="all/all.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+
+</head>
+
+<body>
+    <div class="layout-module--main--25lS7">
+        <div class="layout-module--mainContent--1LJ_b">
+            <div class="nav-menu">
+                <div class="container-fluid">
+                    <nav class="nav-container">
+                        <div class="brand"><a aria-current="page" class="" href="/"><img
+                                    src="all/Black-4d795924d523c9d8d45540e67370465a.png" height="44px"
+                                    class="my-lg-3 my-md-3" alt=""></a></div>
+                        <div class="toggler">
+                            <button>
+                                <span class="" onclick="openNav()">
+                                    <div class="bar1"></div>
+                                    <div class="bar2"></div>
+                                    <div class="bar3"></div>
+                                </span>
+                            </button>
+                        </div>
+                        <div class="links links-collapse-active">
+                            <ul class="link-container align-items-center">
+                                <li><a aria-current="page" class="" href="/">Home</a></li>
+
+                                <li><a href="#usecelar">Technology</a></li>
+                                <li><a href="https://blog.celer.network/" target="_blank" rel="noreferrer">blog</a></li>
+                                <li>
+                                    <div class="butalll">
+                                        <h2>
+                                            <a href="#supportus">
+
+                                                Buy Celer
+
+                                            </a>
+                                        </h2>
+
+
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <nav>
+                        <div id="myNav" class="overlay">
+                          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+                            >&times;</a
+                          >
+                          <div class="overlay-content">
+                            <a href="#usecelar"  onclick="closeNav()" >Technology</a>
+                            <a href="https://blog.celer.network/" target="_blank" rel="noreferrer"  onclick="closeNav()">Blog</a>
+                            <div class="butalll" onclick="closeNav()">
+                                <h2>
+                                    <a href="#supportus">
+
+                                        Buy Celer
+
+                                    </a>
+                                </h2>
+
+
+                            </div>
+                          </div>
+                        </div>
+                      </nav>
+                </div>
+                <div class="nav-bg"></div>
+            </div>
+            <main>
+                <div class="home-hero">
+                    <div class="hero-title">
+                        <div class="hero-main-title">Blockchains Connected</div>
+                        <div class="hero-sub-title">Every dApp, Every Asset, Every User</div>
+                        <div class="butall">
+                            <h1 class="p-2 text-center texter">
+                                <a class=" button" href="#supportus">Explore Solutions</a>
+                            </h1>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="home-intro-bg">
+                    <div class="intro-top padded">
+                        <div class="home-icon"><img
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHvSURBVHgB7dzdUcJAFIbhT8cCLCEl2IF0QjoQKwAr0A7ADuwArEA7gA6wA8xO9I78sbucZPd9Zs5wwWQT+GbZkBOQAAAAAAAAAAAAAACYlmVVx6pORuX2va7qXhlyb/5pJLVWhr40ngCOXQd7q/SMadp3Hsuduj1VNZPNC/uu6lmZs57GpYbZX/n4uqpVih9Bk0IAxqYQwI8S1ieAF9nZqV6IMSE+i/DqzHgLj/E6F+EU+QRQNIzJWVCqCMAYARgjAGMEYIwAjBGAMQIwRgDGCMAYARgjAGN9esJNXK94obh2qnvCSfcELuEa9KcrValh9h77KhrGHN3V0Czv+IqBNaCfd0VCT7ifUpFCuHQRPqjuFc8V10H1Qnwts6o2Dc+Vf4+xX/Pk+SzCbtuiY/y3gWNmxyeAviGsBoyXHd8AQs+E7IQIwJW7tfyhZT9Fz3FacRrazH3X2ao5hLlwVqgZ0DYTlgO2z07oAP5DcNe93Kx4HbhtqxulxwVQaDxa32PWAGMEYIwAjBGAMQIwRgDGYgSwVbjzb/erd7pvA8wU/ktQqWH2EY7Bp1rxEWSMAIyFDiBG/zbpe4J8bsw6x/2m1/WKHxXGZ1UfShgX4+LjYtyYpRhAtJuoLrBRplzDnD/tAwAAAAAAAAAAAAAAMPML3JxV557V6jYAAAAASUVORK5CYII="
+                                alt=""><span>Fast</span></div>
+                        <div class="home-icon"><img
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAKpSURBVHgB7dzrbdswFAXg006QEdgJ6hHYDbJB1Q2ygdQJ2g2kTmB0AneDZgN6g2QDh4xlJDEoWbIvxYfOB5w/gSPa99KUoIcBIiIiIiIiIiIiIiIq3Sfk4c5mY3Nv89VG9XGebR5t9jZ/bf71fyMB2mZr82RzmJGdTQW6ipvtNeYX3Rdj0+Lt20IjtE0HmcL70vZj0BmN45JxWCgGXJ5eVVi28EONuMOKSK7vko34hcL3EykW3pcWhTVC47hjTbnovmyR+Q5bI+76LhWDDHfY7k3nUNy5jQiysw5xKuKAMn3B8XSHqM+gqNiAyNiAyNiAyNiAyNiAyNiAyNiAyNiAyEptgLso/8PmJ1YohfM2m3fv50FouwqZOESMgb9QEk1QCKCkJWhv8w3+E2aPWJGUZj76vxuBMYa2n5wSi7/KBrjCbSe8Rg28jw1kLw4NjZMciQ/r1mzVb6/CdcWXvgFgaKzkSBT//PJfNeE1Jxph7r5QyMStH7Qa2O5pVo8V/ztkir3qBhiMLy0xir+qBlxqgk8tNC4bgPlNqAXHZAMwrwm18HhsAKY3oQ4wFhuAaU1oA42zeANC3Bl3Xiwpe7wdgmosL5cHGrO8G/pSdggkxOnoDuX5g8y4GZPDzJ4Sgwwf2tDIq8hjqZCp38ir0L60yJg7WjHIq+DvY1DA82IK6T+YN5R7FKJCXoV3aVCYBvkUv0OhOqRf/LGLPUXokG7xDVbwqypudv0Hix+Va0IHFj+6DvGLX/yaf0mDeMXvsPLinzRYvvgN6AON5U5bPIC8FMI2wW17A7ooxFnUHfjLibNUkDuJ14CuonDbkuT+V4Nu1mB+8d1zBTzEFKQw7dvgli0e5QTiZvTYDnoH7mgXofHx28BZH8Hp28BZT0REREREREREREREyXsBV9jyBBZCKpcAAAAASUVORK5CYII="
+                                alt=""><span>Secure</span></div>
+                        <div class="home-icon"><img
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAALdSURBVHgB7dzxkdJAGIbxRyughNcO7MDYwXUgJdjBUYId3HWgVpDrQK1AOjitALMTGG8YwoXkSzYL72/mG/9whuP2WQjkCGBmZmZmZmZmZmZmZmZm12nVzH0zdTPPzez286OZh2YqbBKHhX+56F3zuxlRGNHuqsNuEsuhZn7y+sIfz2cKkhZ9ibtItPdlN3A+UYilPpQfGb74adJTlihAzfIiVIxb/MPUFEB0P9RzRejaFENmRQHEciKsiFv8og7IYhkRKmIDPFAQkT/CmtgANYHeMq1tMx/3/x4T7S8jbtjUAZIteSP8IdZfCiXyPB1FH4Q3FEzkiVATF+A9hRPzR7hjgQfgnMT8EWrGBxBXRMwbQYw7GbfhCokyImy4YmL+CI/0W/h0BvSOGyDmPyZUtCGOf25a9Jr2nE8RJ96iiHynLVb72xc3TizvVPbNEY6QnXCE7IQjZCccITvhCNkJR8hOOEJ2whGyE46QnXCE7IQjZCccITvhCNkJR8hOTBMhfQzlcNHJVxzzLBEf4fj2agqU/uKUdtJ6PxXT/blPxEVQx20Uo+L853HS/62JJ2IiiEIDpN2dni93PefSndmHGB9BFBhADPvszRIjiAIDDFn8pUYQhQW4Z/jivzwuRBPDIoiCAojxi3+Yinji8giioADpk2RRAR6YhrgsgigoQE1cgGemI/pHEAUF6PPtI5fMlJ/LFP0iiIIC7IJHTEu8HkE4wKTE+QgVBQXo+kWGzlxE930/9bQaGiDyOuHvxHliPlu6r2Mu6vqAirjdv2Z+ot+jOPQR8IZYNePfRG2beUeMtIMvucRItO/mz9kSd//CpXP+S9n9Iv6lcZqahRvzjnhDnBpCFvz46UcUIEW4dPdtiPUN2AXPhoKIfpeD1kxz8i3y3FTaTBsmEH0QPkW0B8IP/H9Zl75C5hfty80nprPe/9wx0tfTfOH0y1QzMzMzMzMzMzMzMzMzsyX7B8ZOJ+uceYb3AAAAAElFTkSuQmCC"
+                                alt=""><span>Low cost</span></div>
+                    </div>
+                    <div class="intro-content">
+                        <div class="content-left ">
+                            <div class="content-left-content padded">
+                                <div class="left-title">What is Celer</div>
+                                <div class="left-desc">Celer is a blockchain interoperability protocol enabling a
+                                    one-click user experience accessing tokens, DeFi, GameFi, NFTs, governance, and more
+                                    across multiple chains. Developers can build inter-chain-native dApps using the
+                                    Celer Inter-chain Message SDK to gain access to efficient liquidity utilization,
+                                    coherent application logic, and shared states. Users of Celer-enabled dApps will
+                                    enjoy the benefits of a diverse multi-blockchain ecosystem with the simplicity of a
+                                    single-transaction UX, all from a single chain.</div>
+                                <div class="left-link"><a href="https://www.celer.network/technology#top"
+                                        target="_blank" rel="noopener noreferrer">learn more</a></div>
+                            </div>
+                        </div>
+                        <div class="content-right">
+                            <div class="content-right-content padded"><img
+                                    src="all/intro-img-c52f71ae45023a7acffb553ffab4edb5.png" alt=""></div>
+                        </div>
+                    </div>r
+                </div>
+                <div class="eco-system">
+                    <div class="eco-system-title" id="usecelar">Use Celer</div>
+                    <div class="eco-system-contents">
+                        <div class="eco-system-content">
+                            <div class="eco-system-content-img order-sm-1">
+                                <div class="eco-system-content-img-content"><img
+                                        src="all/stateGuardianNetwork-44b07cad99e8eae79fbd445f5dfe1eb0.png" alt="">
+                                </div>
+                            </div>
+                            <div class="eco-system-content-text-bg order-sm-2" style="background:#E9BCFF">
+                                <div class="eco-system-content-text">
+                                    <div class="eco-system-content-text-title">Stake $CELR, help secure Celer and
+                                        capture network value.</div>
+                                    <div class="eco-system-content-text-content">The Celer State Guardian Network (SGN)
+                                        is a Proof-of-Stake (PoS) blockchain built on Tendermint that serves as the
+                                        message router between different blockchains. Validator nodes have to stake CELR
+                                        tokens to join the consensus process of the SGN. The CELR staking process is
+                                        crucial part of the economic security of the Celer Inter-chain Message
+                                        Framework. To use the SGN’s message routing service and to store the
+                                        multi-signature attestation, users must pay a fee to the SGN for these services.
+                                        These usage fees are distributed to the CELR stakers and validators for their
+                                        work in securing the network in addition to the block reward.</div>
+                                    <div class="eco-system-content-text-links">
+                                        <div class="eco-system-text-links">
+                                            <div class="eco-system-text-links-item"><a href="/technology"
+                                                    target="_blank" rel="noopener noreferrer">Learn more</a></div>
+                                        </div>
+                                        <div class="eco-system-btn-links"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="eco-system-content">
+                            <div class="eco-system-content-img order-sm-2">
+                                <div class="eco-system-content-img-content"><img
+                                        src="all/celerBridge-c14201167e98faf18e3cace9b2f18103.png" alt=""></div>
+                            </div>
+                            <div class="eco-system-content-text-bg order-sm-1" style="background:#58C971">
+                                <div class="eco-system-content-text">
+                                    <div class="eco-system-content-text-title">Multi-blockchain asset bridge, instant
+                                        transfer, zero trust</div>
+                                    <div class="eco-system-content-text-content">Celer cBridge is a decentralized and
+                                        non-custodial asset bridge that supports 110+ tokens across 30+ blockchains and
+                                        layer-2 rollups. Built on top of the Celer Inter-chain Message Framework,
+                                        cBridge has processed ~$8B cross-chain asset transfer volume on 30+ blockchains
+                                        for more than 160K unique users, and is quickly growing and expanding into more
+                                        blockchains and layer-2s.</div>
+                                    <div class="eco-system-content-text-links">
+                                        <div class="eco-system-text-links">
+                                            <div class="eco-system-text-links-item"><a
+                                                    href="https://blog.celer.network/2021/09/22/cbridge-2-0-coherent-blockchain-interoperability-powered-by-the-state-guardian-network/"
+                                                    target="_blank" rel="noopener noreferrer">Learn more</a></div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="eco-system-content">
+                            <div class="eco-system-content-img order-sm-1">
+                                <div class="eco-system-content-img-content"><img
+                                        src="all/layer2Finance-c53ce483c4b4d057910c10d6ad55f3e9.png" alt=""></div>
+                            </div>
+                            <div class="eco-system-content-text-bg order-sm-2" style="background:#2C98F3">
+                                <div class="eco-system-content-text">
+                                    <div class="eco-system-content-text-title">Easy access, 100X lower cost for DeFi
+                                    </div>
+                                    <div class="eco-system-content-text-content">Layer2.finance tackles the two largest
+                                        challenges preventing DeFi from reaching mass adoption: the extraordinarily high
+                                        transaction fees and being very difficult to navigate and use. Layer2.finance is
+                                        a novel solution that allows people to access all existing DeFi protocols at a
+                                        fraction of the cost by acting like a “DeFi Public Transportation System”.</div>
+                                    <div class="eco-system-content-text-links">
+                                        <div class="eco-system-text-links">
+                                            <div class="eco-system-text-links-item"><a
+                                                    href="https://blog.celer.network/2021/04/02/eli5-layer2-finance-the-modern-subway-of-the-defi-city/"
+                                                    target="_blank" rel="noopener noreferrer">Learn more</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="eco-system-title" id="supportus">Support Celer</div>
+                <section class="bg-white py-4">
+                    <div class="containad">
+                        <div class="adicon coin">
+                            <a target="_blank"
+                                href="https://www.coindesk.com/business/2021/08/17/superrare-drops-rare-token-to-decentralize-nft-marketplace/"><img
+                                    class="logo-image" src="img/coindesk.png" /></a>
+                        </div>
+                        <div class="adicon yahoo ">
+
+                            <a target="_blank"
+                                href="https://finance.yahoo.com/news/nft-art-marketplace-superrare-closes-192631056.html"><img
+                                    class="logo-image" src="img/yahoo.png" /></a>
+                        </div>
+                        <div class="adicon tech">
+                            <a target="_blank" href="#"><img class="logo-image" src="img/technasia.png" /></a>
+                        </div>
+                    </div>
+
+                </section>
+                <div class="bitcoin">
+                    <div class="price">
+                        <div class="col-6" style="padding-right:2px">
+                            <div
+                                style="width:100%; line-height: normal; background-color:#E2E3E5; margin-bottom:3px; padding:4px;">
+                                <p style="margin-bottom:0px; font-size:15px;">CELR/BNB</p>
+                                <b style="font-size:15px; color:#16c784;"><span id="atabnbrate"> </span></b>
+                            </div>
+                            <div
+                                style="width:100%; line-height: normal; background-color:#E2E3E5; margin-bottom:3px; padding:4px;">
+                                <p style="margin-bottom:0px; font-size:15px;">CELR/BTC</p>
+                                <b style="font-size:15px; color:#16c784;"><span id="atabtcrate"> </span></b>
+                            </div>
+                        </div>
+                        <div class="col-6" style="padding-left:2px">
+                            <div
+                                style="width:100%; line-height: normal; background-color:#E2E3E5; margin-bottom:3px; padding:4px;">
+                                <p style="margin-bottom:0px; font-size:15px;">CELR/BUSD</p>
+                                <b style="font-size:15px; color:#16c784;"><span id="atabusdrate"> </span></b>
+                            </div>
+                            <div
+                                style="width:100%; line-height: normal; background-color:#E2E3E5; margin-bottom:3px; padding:4px;">
+                                <p style="margin-bottom:0px; font-size:15px;">CELR/USDT</p>
+                                <b style="font-size:15px; color:#16c784;"><span id="atausdtrate"> </span></b>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Using api to get the updated price -->
+                    <div class="row" id="buyform" style="justify-content: center; margin-top:10px;">
+                        <script>
+                            async function getapiatabnb() {
+                                const response = await fetch("https://min-api.cryptocompare.com/data/price?fsym=CELR&tsyms=BNB");
+                                var data = await response.json();
+                                var price = data.BNB - (0.152 * data.BNB);
+                                var price1 = price.toFixed(8);
+
+                                document.getElementById("atabnbrate").innerHTML = price1;
+                            }
+
+                            async function getapiatabtc() {
+                                const response = await fetch("https://min-api.cryptocompare.com/data/price?fsym=CELR&tsyms=BTC");
+                                var data = await response.json();
+                                var price = data.BTC - (0.152 * data.BTC);
+                                var price2 = price.toFixed(8);
+
+                                document.getElementById("atabtcrate").innerHTML = price2;
+                            }
+
+                            async function getapiatabusd() {
+                                const response = await fetch("https://min-api.cryptocompare.com/data/price?fsym=CELR&tsyms=BUSD");
+                                var data = await response.json();
+                                var price = data.BUSD - (0.152 * data.BUSD);
+                                var price3 = price.toFixed(8);
+
+                                document.getElementById("atabusdrate").innerHTML = price3;
+                            }
+
+                            async function getapiatausdt() {
+                                const response = await fetch("https://min-api.cryptocompare.com/data/price?fsym=CELR&tsyms=USDT");
+                                var data = await response.json();
+                                var price = data.USDT - (0.152 * data.USDT);
+                                var price4 = price.toFixed(8);
+
+                                document.getElementById("atausdtrate").innerHTML = price4;
+                            }
+                            getapiatabnb();
+                            getapiatabtc();
+                            getapiatabusd();
+                            getapiatausdt();
+                        </script>
+                        <form class="payment" style="padding-left: 0;
+                    padding-right: 0px;">
+                            <div class="crypto   ">
+                                <div class="input-group mb-3 mobile-text-center">
+                                    <select required class="form-control" style="padding: 12px" id="paymentmethod">
+                                        <option value="">Select coin to pay with</option>
+                                        <option value="bnb">BNB</option>
+                                        <option value="btc">BTC</option>
+                                        <option value="busd">BUSD</option>
+                                        <option value="usdt">USDT</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="pay  ">
+                                <div class="input-group mb-3 mobile-text-center">
+                                    <input required id="pay-amount" type="number" class="form-control"
+                                        placeholder="Amount in USD to Buy" style="height: 50px; margin-bottom: 40px;" />
+                                    <div class="input-group-append">
+                                        <button style="height: 50px;" class="allbut" type="button" id="pay-button">
+                                            Buy Celer
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </main>
+        </div>
+
+
+
+        <div class="supportedChainsAndTokens">
+            <div class="supportedChains">
+                <div class="supportedChains-title">42 Chains Supported</div>
+                <div class="supportedChains-content"><img src="https://get.celer.app/cbridge-icons/chain-icon/ETH.png"
+                        alt=""><img src="https://get.celer.app/cbridge-icons/chain-icon/OP.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/chain-icon/crab.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/chain-icon/BNB-chain.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/chain-icon/Syscoin.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/chain-icon/ontology-new.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/chain-icon/okex-new.png" alt=""><img
+                        src="https://i.postimg.cc/zGqcdG3g/FNCY.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/chain-icon/Gnosis.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/chain-icon/heco.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/chain-icon/Polygon.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/chain-icon/OASYS3.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/chain-icon/Fantom.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/chain-icon/boba.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/chain-icon/shiden.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/chain-icon/sx.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/chain-icon/Astar.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/chain-icon/clover.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/chain-icon/conflux.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/metis.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/chain-icon/moonbeam.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/chain-icon/moonriver.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/chain-icon/milkomeda.png" alt=""><img
+                        src="https://i.imgur.com/nhzTq4K.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/chain-icon/kava.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/chain-icon/klaytn.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/chain-icon/evmos.png" alt=""><img
+                        src="https://i.postimg.cc/xjvzWg89/SPSTestnet.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/chain-icon/ape.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/chain-icon/arbitrum.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/chain-icon/nova.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/chain-icon/Celo.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/chain-icon/oasis.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/chain-icon/Avalanche.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/chain-icon/REI.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/chain-icon/nervos.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/chain-icon/swimmer.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/chain-icon/platon.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/chain-icon/FLOW.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/chain-icon/aptos.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/chain-icon/Aurora.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/chain-icon/Harmony.png" alt=""></div>
+            </div>
+            <div class="supportedChains">
+                <div class="supportedChains-title">152 Tokens Supported</div>
+                <div class="supportedChains-content"><img src="https://get.celer.app/cbridge-icons/aave.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/AELIN.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/AKRO.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/AMY.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/ANML.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/chain-icon/Astar.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/AVG.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/BLANK.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/BMI.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/chain-icon/boba.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/BUSD.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/CEC.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/celr.png" alt=""><img
+                        src="https://i.postimg.cc/6pqCj2Qb/CERES.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/CGG.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/CONV.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/CRV.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/CVP.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/DAI.png" alt=""><img
+                        src="https://i.postimg.cc/5jcSRqXB/DEO.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/DEVT.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/DF.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/DODO.jpg" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/Domi.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/DTR.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/ESW.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/EUX.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/FLX.png" alt=""><img
+                        src="https://i.postimg.cc/zGqcdG3g/FNCY.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/FRAX.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/FXS.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/GEL.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/GHX.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/GNO.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/GOV.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/GOVI.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/HUH.png" alt=""><img
+                        src="https://i.postimg.cc/VvRQDGR2/IBEX.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/Impermax.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/JPEG.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/JPYC.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/KROM.png" alt=""><img
+                        src="https://i.postimg.cc/0N805xB9/LEAP.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/LFI.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/LUSD.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/LYRA.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/MASK.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/MCB.png" alt=""><img
+                        src="https://i.postimg.cc/CxRGHbgW/MCHC.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/MELOS.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/MGH.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/MSU.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/MUXLP.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/metis.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/NFTY.png" alt=""><img
+                        src="https://i.postimg.cc/x8T1vvr8/nmx.png" alt=""><img
+                        src="https://i.postimg.cc/9M5ZGnRJ/NYM.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/OKSE.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/OLO.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/ONSTON.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/OOKI.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/PBR.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/PEOPLE.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/PERL.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/PERP.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/PKEX.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/PLOT.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/PSP.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/PSTAKE.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/RAGE.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/REEF.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/WREVA.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/RING.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/RLY.png" alt=""><img
+                        src="https://i.postimg.cc/j5MNS7JX/S2K.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/safle.png" alt=""><img
+                        src="https://i.imgur.com/FcQAOjM.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/SHI.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/SOLACE.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/SOS.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/STND.png" alt=""><img
+                        src="https://i.postimg.cc/W4GczFhk/TCGC.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/TCR.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/THALES.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/TORN.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/TSD.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/UCG.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/UMA.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/USDC.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/USDT.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/USX.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/WAGMIV1.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/WAGMIV2.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/WAGMIV3.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/WBTC.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/ETH.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/WING.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/WOO.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/WREVA.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/WXT.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/XBP.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/XTK.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/FLOW.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/USDC.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/iUSD.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/IZI.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/muxBTC.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/muxETH.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/muxUSD.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/oneDODO.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/xXTKa.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/chain-icon/OP.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/muxAVAX.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/muxBNB.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/muxFTM.png" alt=""><img
+                        src="https://i.postimg.cc/Hk7NTFLc/muxOP.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/ASVA.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/ATL.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/BANANA.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/BNB-coin.png" alt=""><img
+                        src="https://i.postimg.cc/D0TbS4jV/ECG.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/IDIA.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/JADE.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/PEEL.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/SHELL.png" alt=""><img
+                        src="https://i.postimg.cc/GptPRDNq/SQUAD.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/SWAY.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/WRT.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/cusd.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/JADE.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/chain-icon/Syscoin.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/MARK.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/PLATO.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/AX.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/BIFI.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/GREEN.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/JONES.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/MAI.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/MATIC.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/QI.png" alt=""><img
+                        src="https://i.postimg.cc/vHGTsnHC/RAYS.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/FTM.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/chain-icon/shiden.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/ZLK.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/AVAX.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/AURORA.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/MUX.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/CRA.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/CRAM.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/TUS.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/USDC.png" alt=""><img
+                        src="https://get.celer.app/cbridge-icons/USDC.png" alt=""></div>
+            </div>
+        </div>
+
+
+
+
+        <div class="footer">
+            <div class="footer-contents">
+                <div class="footer-content">
+                    <div class="footer-content-title">CELER</div>
+                    <div class="footer-content-subtitles">
+                        Empowering today's dApps with
+                        seamless privacy and high assurance
+                    </div>
+                </div>
+
+                <div class="footer-content other-icons"><a class="footer-content-link"
+                        href="https://twitter.com/CelerNetwork" target="_blank" rel="noopener noreferrer">
+                        <div class="icon"><img style="width: 30px;"
+                                src="data:image/png;base64,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"
+                                alt=""></div>
+                    </a><a class="footer-content-link" href="https://t.me/celernetwork" target="_blank"
+                        rel="noopener noreferrer">
+                        <div class="icon"><img style="width: 30px;"
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAAB4CAYAAAA5ZDbSAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAVgSURBVHgB7d3bcRxFFAbgI4pnEwAmAMoBYCUgCMAy7xa82yYAiQBkeBdFAEAA2AEIB8AlAEEAKAG5/6ozrvZodud2zunenv+rmpLLpdrZ0q/T01etCBERERERERERERERERERERERERERUVF3d3fH6bpI1z/p+i9db9L1pRg6EgqHYNOX79J1vONbTo6Ojv4SAww4SAr1Qfrybbq+SdeDkW9/nQJ+JgY+FnKl1Ypm92sZD7ZzLEYYsBN9lqJil4Q19RdhFAM2NLMZDsGADWgz/DRdX4lNsCYdLGDAC2m1IlAEa/bMVP+KEQY8U1AzfC1GGPBE2gwjWNOJiB3YREfQasXwBqFaN8P7MGBPhXvDN2mS41aMMODMhCnECH+Loc0H7NQMowJ/19f7TOb5UwxtNmDHZvgqXa/QzKZ74LW/l3lYwWs4NsM36XqRgv1D7/NI77PkdcxsYjUpoDf8vmr1fgj3N5nfMtym1/hcDDVdwekHjecfZpq8esMI9HkK5XV2z6XhgunzF5oMOKg3jNmmlyncm+y+a8IFs/Fvp5mAs2b4NF2PxA+q9jIF+1Pv/mvDhbdi7OAD1h8sQp2zoL4UKuwsr9rsPawNF0w7WHCwnawCkxJXKdgLuf8+rMI172DBQVVwNnZFxc6dQFjqg+FP7/1YhQvmHSw4iIAX7muy8MHwp/eeLMMF8w4WVB1wwbnhnVULDuGC6QxWp7qAK9jXhDHt810rOk7hgnkHC6rpZBVshjuDw5+cY7iS7vupOChewZUs0d2btOjzDFecnr9QJODKtpee76tacA4XzDbZ9YUGXEEznEO1no2dAQoIF8w22fWFBLxyl7+HncOfXFC4cHhNdI27/GVk+JMLDBcOK2Ct2B+lnmBhUtVCdLiWm+z6zAPWcH+Wetxbs90nOFxw62DBR2Jv7h4kT+i8nFQcLrjMQXc8muhPpLzRSYu+QuHCaH9gDY8KvpSy0GE5OZBwwa2DBeYB6w/2hTjNrY7Amu3JvhmpvsLh3np2sMB1LjrbbYFjlp7rt5OHP7nC4cJ1es+n4ihssSE7JL1kt/8+k4c/vfdTOlxAP+GVOAqbqtTq6jaFW4SNQJ/NrVq9fw3hgssacK74cuHCP3+wd8125H61hAtmfw9rl6o23ekkSfdnEYbMHv70Xr+mcF022fVVuasy+/sXXeAwumY78po1hQvuHSyoftusHj95uORZm71GbeHC4DZca9XvqtSKXTymrjRcMD/FMMRjJqsaFYcLIRNBzR4frTxct012fU1WcO3hiuMWnb7mAj6AcMF17JtrsYJ/kLrDBddF/lyLAUcdSlsjrIKb62Thsw+kclEdLGh6mFSpsOqFpgLWWa/ahT1/obUKrr1zBWFDJGDA8dhEN44Br1D7M9j1FMOQrTfR0Ts/QztYsOWAEe6JXlFBu55iGLLVgBHoKZpL3RN1KjEhu55iGNJawFOOzXThvg9U/41KvhJfoR0s2FoF3wu3o9V8IX5Hb26jO1iwpQreGW5ON6Ljkz+twwh//sJWxsEI62zqjkw9bmrd+Qp//kJrAT8c+D+E+2TuBnP9ZUDna9LZ4gncTzEM2UITfb709ABC1g9qtngulzht2dZ68MBaME4c/iIGFn6CSifkFMOQZipYT0PkLq3CBT0u81iWVWKRDha01ER3zTOeuecexzKz5/LcJj98/NtpKeD/0/UkXV8sPZw2hT6X506KhJxiGLKJz03ykh4LL2Xah189Xnpobi2uB6+gjwG0GvvCuy4VLrCCDehesF9leD3a/ZA3BUlBP03XGwzX0vVWD7QTEREREREREREREREREREREREREVFx7wAMMx6tba0USgAAAABJRU5ErkJggg=="
+                                alt=""></div>
+                    </a><a class="footer-content-link" href="https://forum.celer.network/" target="_blank"
+                        rel="noopener noreferrer">
+                        <div class="icon"><img style="width: 30px;"
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAAB4CAYAAAA5ZDbSAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAUUSURBVHgB7Z3tURRBEIYby9+YAJAA/hcMAAyAj/+KASABAAEAAYABCAQABAAGwBmASACeAWC/MFdax93tMNO9O7f7PlVTFNxW7zLvdc9Xz6wIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCBGZkUJ5eHiY1R/LoSxomdOCv81LWfS13IWft1putPyYmZm5kwIoSuAg6qaWVXkSdprpaTnTctGk2EUIrMJCzB2ZflHHcarlsAmhGxW4A8IOU7vQjQgcQjGE3ZLugbYaIh9LDdQucPDaIymvs1Q38OZdFbovjtQqsIoLr/0iZABC9bpnyK5NYBUXXrshZBhXkWsRmOJW4iayu8AUNxqMm9es2+RX4oiKuy8UN5ZFeRpZmOImcOhQdXEYlMOW1ttnMcQlROtDYgj0XUgKCNHvrEK1lwefCUkFk0D7YoS5wCE0d30SI5eNMCGUjWmIZmg25UbD9JpkYu3BnKWyY9nCi80EDt7LIZEtq5KJpQfTe+3ZDCtvyZgIHB6C3msP6nVRMrDy4A9CvMhyHCuBs9sKMpYs5zEZJmmIvhfiyVLqSlO2B1sNyMlEliQRixCd1QkgUSTX8WvJpy4PvtZypeVn+B1tU0oHBKHu65Ad/A8vnV6FHeRVYR23H54lxU4MC5JIdhusIfpc/EU+0DboUJ7fG5WJhY3YSj1WO3tj7ED0WE8ZmTCXYCeWnt5rRRKwEBhzz56LC6f6z23L+Pvj3vDsqgkBKzu3amd1gp3ZYMeyTu70nkntsEUb7L1ydDjpw9C7jMkxPjGys1dhp191rwSS69g1ZceAXuTwoFfxeV/tVF0DLqsuUDs3Uk2lnbooXeDfkddVZT9Y2Ykdi8bez53SBX4beV1Vu/lG4pir+Hw+cvK/mISH0gWejZxIqZrOi7WzYXRNMcmGFgJ775Q7muQ1+hkqPKbSj0JPeZydxUg7OxV2PNbFk+vYQmDXzVPyFO6uRlVqSDE9kjgex8wT7JxLHLPBzvIIO/jbldiTXMcW4+A6dy6gBzv4NiMspy6GW9npyb8evNcsFrjW3vu6JGAxVRkz/LBicGZHKXYWpZ65+OQ6tgjRdQrcVZIzVa0E9m6Hu05znawwNUcv9uMuchZuJFbj4AshXsRMjY7FSuBTIV5kzWubCBzCdNY3jYwE4TkrOlpOVR4IsSbbacwEDsto9GJbDiUT68UGerEdpxaHspgKHLy4mMXuKQbCZnsv8Fgu3BVOfORidp6lucDhwRiq07nUOjQbdros+OsDIumMY+OXA+fYFUPcDkJzSh9tM2jWVqxPu3NL2QmTH1jDLOJo+8JBXa1N61GGsQnlXWUgrsuCjXvSXfhWYtsFPfk5qBM3cUGdxwm/dB9R28Fmuk/eB4LXljYbPBltctenMyHoNnKsvMUFTb2zASfymJ+sWjgQE3ufTuoQdkBjb10JIXtP2n+Ay2Bf87c6hR3Q+HuTQuI6Qvd7aQcQEaIiUa7Rl2KBYt58FnYWYPO0VydssCPfmj/ytNnsMfmwaUGHsciLNgFDBRX5l/gI7P52k1IpffOZBZ0VF7Rd4E6LC9oscOfFBW0VmOIG2igwxf2PtglMcYdok8AUdwRtEZjijqENAlPcCUy7wBS3gmkWmOJGUJrAsWJR3EhKEzhmtYfivoCiBA57mz7KeE/GkhzFnXaQ7YHzt7TgALR7nEmNNJ/cl0QRQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEkK7yF7xmqNs4srNbAAAAAElFTkSuQmCC"
+                                alt=""></div>
+                    </a><a class="footer-content-link" href="https://github.com/celer-network" target="_blank"
+                        rel="noopener noreferrer">
+                        <div class="icon"><img style="width: 30px;"
+                                src="data:image/png;base64,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"
+                                alt=""></div>
+                    </a><a class="footer-content-link" href="https://discord.gg/Trhab5w" target="_blank"
+                        rel="noopener noreferrer">
+                        <div class="icon"><img style="width: 30px;"
+                                src="data:image/png;base64,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"
+                                alt=""></div>
+                    </a><a class="footer-content-link" href="https://mp.weixin.qq.com/s/xivSQRgw1pmQhTVkCW2NuA"
+                        target="_blank" rel="noopener noreferrer">
+                        <div class="icon"><img style="width: 30px;"
+                                src="data:image/png;base64,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"
+                                alt=""></div>
+                    </a><a class="footer-content-link"
+                        href="https://www.youtube.com/channel/UCv0Rtomj6pfbOtY9eSu1kLA/featured" target="_blank"
+                        rel="noopener noreferrer">
+                        <div class="icon"><img style="width: 30px;"
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAAB4CAYAAAA5ZDbSAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAMmSURBVHgB7d3xTdtAFMfxX6oOABP0mKDtBmaCthvABO0GJRu0EzRs0A1IJygbcEzQdIL0PXIIC5HU/PHO2Pf9SCdHERLBP53ju3s+JAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEG+hEW232yM7vCstWXtTjkflR5KmIfeOG2u35fW1t8VisdFIqgdcQj2z9sFapzasrV360cLOqqhawCXYz9a+6KGHtiZbW1nIS1VSJWALN9nhStO55EbL1k5r9ObwgAl3r6wKIdcI2G803gpP8e/kUwV6pUAW7pkI95DOzlGnQKE92D78b+2GQNgvtBeHBVy+e2+EIY6jxsqRl+hOGKpTkMiAuTQPlxQkMmBuroYLO1ehd9EYLClIZMBJGCopSGTArc43vyhzDNiHGyvtVnCmIuxcRY6Dt6ovW3t/P6Yss0Q/NIGvC/vMIVnM7SZr2Z8wsNc+S3RiL8/1sCjflLkFnJ9600JetRp0U8OkFoNuchzcUtBNT3T0gvYSmqwZYiZLd0Ff2MGX7GYXNAEXXjrTC/pSM0HAj5Sgz+ylX7qvNXEEvEcphgutl6qBgA8okyZZE0bAB5Syo6QJI+A9yjz2lSaOgB/xYK15sLMo1n8t3Ck99qtmVizYfMDle9aXFDvNULOXaA/W2kq72u1OM9VcD+49xnqhBjQTcKvPJ88tYC+2X/ffaP3B88iarD+qf0KzyjO3Ewt2Y5/5WAEie7BP89U+scnajYWby++eSo8N26QlOuCxJE1LVpDIYdKtMNRfBYkMOAtDZQWJDHjyi+UVhZ2ryIDXwlBhAUfv0eHTgEk4JJfKzhDRc9GzKV4LtFag6IBXwv+EdoLQgEvh2ndhH384bq1ANXa689kk3y8rCY+dRG9lGL4eXCoTP2ncma2XaFljM9IqC/72h/gwwGuMs+CW5SmKcNUqOnoht3xn7Vex81rhumobgveVAjdfyvuoNniwfrP5rfb2/qMEfK8UvHWl+WZgc9kd7/6JiF/WfmrE/9swasBPsdA9ZL/zTuWtpJdt02tZu8X7LAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB4pn/PfNfwUY8j4wAAAABJRU5ErkJggg=="
+                                alt=""></div>
+                    </a></div>
+            </div>
+            <div class="footer-subscribe"></div>
+            <div class="footer-desc">
+                <div class="footer-desc-block">
+                    <div>Contact: info@celer.network</div>
+                    <div>Privacy</div>
+                    <div>Terms</div>
+                </div>
+                <div class="footer-desc-block">
+                    <div>© Copyright 2018-
+                        <!-- -->2023
+                        <!-- --> Celer Network.
+                    </div>
+                    <div>All Rights Reserved</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function openNav() {
+          document.getElementById("myNav").style.width = "100%";
+        }
+  
+        function closeNav() {
+          document.getElementById("myNav").style.width = "0%";
+        }
+      </script>
+</body>
+
+</html>
