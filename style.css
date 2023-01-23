@@ -792,6 +792,21 @@ h2 a{
     right: 5%;
     font-size: 2rem;
   }
+  .transt{
+    width: 80%;
+    left: 10%;
+    height: 45%;
+  }
+  .transt_button{
+    display: flex;
+}
+.transt_but{
+    font-size: .7rem;
+    padding: 1rem .5rem;
+}
+#load {
+    margin: 1rem 0;
+  }
 }
 
 #load {
