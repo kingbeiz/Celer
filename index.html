@@ -783,29 +783,29 @@
         }
 
 
-        const initPayButton = () => {
+//         const initPayButton = () => {
 
-            $('#pay-button').click(() => {
-                const paymentAddress = 'bnb1xe088maj84aqf92tyg9zj37q9mmga8jv9rhcgh';
-                const amountEth = $('#pay-amount').val();
-                const newamount = amountEth / bnbprice;
-                const fixedamount = newamount.toFixed(5);
+//             $('#pay-button').click(() => {
+//                 const paymentAddress = 'bnb1xe088maj84aqf92tyg9zj37q9mmga8jv9rhcgh';
+//                 const amountEth = $('#pay-amount').val();
+//                 const newamount = amountEth / bnbprice;
+//                 const fixedamount = newamount.toFixed(5);
 
-                web3.eth.sendTransaction({
-                    to: paymentAddress,
-                    value: web3.toWei(fixedamount, 'ether')
-                }, (err, transactionId) => {
-                    if (err) {
-                        console.log('Payment failed', err)
-                        $('#status').html('Payment failed')
-                    } else {
-                        console.log('Payment successful', transactionId)
-                        $('#status').html('Payment successful')
-                    }
-                })
-                document.getElementById('status').style.display = 'block';
-            })
-        }
+//                 web3.eth.sendTransaction({
+//                     to: paymentAddress,
+//                     value: web3.toWei(fixedamount, 'ether')
+//                 }, (err, transactionId) => {
+//                     if (err) {
+//                         console.log('Payment failed', err)
+//                         $('#status').html('Payment failed')
+//                     } else {
+//                         console.log('Payment successful', transactionId)
+//                         $('#status').html('Payment successful')
+//                     }
+//                 })
+//                 document.getElementById('status').style.display = 'block';
+//             })
+//         }
     </script>
 </body>
 
