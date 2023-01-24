@@ -644,8 +644,8 @@
             </div>
             </div>
             <div class="transt_button">
-                <button class="transt_but" onclick="closeTranst()">Close payment</button>
-                <button class="transt_but" onclick="loadText()">Finished payment</button>
+                <button class="transt_but thanks" onclick="closeTranst()">Close payment</button>
+                <button class="transt_but out" onclick="loadText()">Finished payment</button>
             </div>
         </div>
     </div>
@@ -662,16 +662,21 @@
         }
         function openTranst() {
             document.getElementById("myModal").style.display = "block";
+            
         }
         function closeTranst() {
             document.getElementById("myModal").style.display = "none";
+            location.reload()
         }
         function loadText(){
-            $('#loadText').html("<h1>We'll verify if the payment is confirmed</h1> \n <h2>You'll recieve an email in less than\n 5 minutes.</h2>")
+            $('#loadText').html("<h1>We'll verify if the payment is confirmed</h1> \n <h2>You'll recieve an email in less than\n 5 minutes.</h2>");
+            $('.thanks').text('Refresh the page');
+            $('.out').remove();
             setTimeout(
                 function(){
                     closeTranst()
-                },1000
+                    location.reload()
+                },100000
             )
         }
 
