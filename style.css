@@ -1,9 +1,12 @@
 body,
 html {
     font-family: 'League Spartan', sans-serif;
+    
 }
 
-
+html{
+    scroll-behavior: smooth;
+}
 
 .nav-menu {
   z-index: 999;
