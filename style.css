@@ -515,7 +515,7 @@ h2 a{
     display: none;
 }
 .transt{
-    display: block;
+    display: none;
     position: fixed;
     top: 30%;
     left: 30%;
