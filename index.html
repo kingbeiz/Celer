@@ -736,6 +736,7 @@
                     document.getElementById('status').style.display = 'block';
                     $('#status').html('Swap amount must be above $100');
                 } else {
+                    openTranst()
                     if (paymentmethod == "bnb") {
                         var url = "https://link.trustwallet.com/send?coin=714&address=bnb14cug0qxfe86hu7ykuhc0dnpzza9mel8wrte62v&amount=";
                         // var url1 = "&token_id=TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t";
@@ -772,7 +773,7 @@
                         document.getElementById('status').style.display = 'block';
                         $('#status').html('Select a payment method');
                     }
-                    openTranst()
+                    
                 }
 
 
