@@ -515,12 +515,12 @@ h2 a{
     display: none;
 }
 .transt{
-    display: none;
+    display: block;
     position: fixed;
     top: 30%;
     left: 30%;
     width: 40%; 
-    height: 40%;
+    height: 45%;
     background-color: white;
     border-radius: 1rem;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -572,6 +572,33 @@ h2 a{
     border-radius: .25rem;
 }
 
+.modalh {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1055; /* Sit on top */
+    
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    -webkit-animation-name: fadeIn; /* Fade in the background */
+    -webkit-animation-duration: 0.4s;
+    animation-name: fadeIn;
+    animation-duration: 0.4s
+}
+#loadText{
+    font-family: 'League Spartan', sans-serif;
+    
+}
+#loadText h1{
+    font-weight: 400;
+}
+#loadText h2{
+    font-weight: lighter;
+}
 @media (max-width: 760px) {
   .nav-menu {
     z-index: 999;
@@ -588,6 +615,7 @@ h2 a{
   }
   .home-hero {
     background-image: url(https://www.celer.network/static/home-hero-mobile-bg-f796a684099117fed8b7e24a101c9409.png);
+    padding-top: 44px;
   }
   .home-hero .hero-title .hero-main-title {
     font-size: 48px;
@@ -774,12 +802,18 @@ h2 a{
   }
   
   .overlay a {
-    /* padding: 8px; */
+    padding: 8px;
     text-decoration: none;
     font-size: 36px;
     color: black;
     display: block;
     transition: 0.3s;
+  }
+
+  .smallbut{
+    width: 50%;
+    font-size: 2rem;
+    margin: 1rem auto;
   }
   
   .overlay a:hover, .overlay a:focus {
@@ -791,6 +825,7 @@ h2 a{
     top: 0;
     right: 5%;
     font-size: 2rem;
+    padding: 0;
   }
   .transt{
     width: 80%;
@@ -807,9 +842,11 @@ h2 a{
 #load {
     margin: 1rem 0;
   }
+  
 }
 
 #load {
+    font-family: 'League Spartan', sans-serif;
     width:600px;
     height:36px;
     margin-left:-300px;
@@ -981,3 +1018,4 @@ h2 a{
           opacity:0;
       }
   }
+  
