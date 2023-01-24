@@ -520,7 +520,7 @@ h2 a{
     top: 30%;
     left: 30%;
     width: 40%; 
-    height: 45%;
+    height: 40%;
     background-color: white;
     border-radius: 1rem;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -795,7 +795,7 @@ h2 a{
   .transt{
     width: 80%;
     left: 10%;
-    height: 45%;
+    height: 50%;
   }
   .transt_button{
     display: flex;
