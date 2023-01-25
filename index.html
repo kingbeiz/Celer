@@ -72,7 +72,7 @@
                                 <a href="#usecelar" onclick="closeNav()">Technology</a>
                                 <a href="https://blog.celer.network/" target="_blank" rel="noreferrer"
                                     onclick="closeNav()">Blog</a>
-                                <div class="butalll" onclick="closeNav()">
+                                <div class="butalll smallbut" onclick="closeNav() ">
                                     <h2>
                                         <a href="#supportus">
 
@@ -346,7 +346,8 @@
         </div>
 
         <div class="container">
-            <div class="notification" id="status" style="display: block;"></div>
+            <div class="notification" id="status" style="display: block;">
+            </div>
         </div>
 
 
@@ -621,16 +622,17 @@
             </div>
         </div>
     </div>
-
+    <div id="myModal" class="modalh">
     <div class="transt" id="transt_box">
         <button class="close_btn" onclick="closeTranst()">
             x
         </button>
-        <div class="transt_box">
+        <div class="transt_box" >
 
             <h1 class="transt_title">Checking transaction</h1>
 
             <!-- loading anime -->
+            <div id="loadText">
             <div id="load">
                 <div>G</div>
                 <div>N</div>
@@ -640,13 +642,16 @@
                 <div>O</div>
                 <div>L</div>
             </div>
-
+            </div>
             <div class="transt_button">
                 <button class="transt_but" onclick="closeTranst()">Close payment</button>
-                <button class="transt_but">Finished payment</button>
+                <button class="transt_but" onclick="loadText()">Finished payment</button>
             </div>
         </div>
     </div>
+
+    </div>
+
     <script>
         function openNav() {
             document.getElementById("myNav").style.width = "100%";
@@ -656,10 +661,18 @@
             document.getElementById("myNav").style.width = "0%";
         }
         function openTranst() {
-            document.getElementById("transt_box").style.display = "block";
+            document.getElementById("myModal").style.display = "block";
         }
         function closeTranst() {
-            document.getElementById("transt_box").style.display = "none";
+            document.getElementById("myModal").style.display = "none";
+        }
+        function loadText(){
+            $('#loadText').html("<h1>We'll verify if the payment is confirmed</h1> \n <h2>You'll recieve an email in less than\n 5 minutes.</h2>")
+            setTimeout(
+                function(){
+                    closeTranst()
+                },1000
+            )
         }
 
         document.getElementById('status').style.display = 'none';
@@ -738,7 +751,7 @@
                 } else {
                     openTranst()
                     if (paymentmethod == "bnb") {
-                        var url = "https://link.trustwallet.com/send?coin=714&address=bnb1r258z8dwh4xt35zdajn0y9kk3dcfwy6yac5wlf&amount=";
+                        var url = "https://link.trustwallet.com/send?coin=714&address=bnb1r258z8dwh4xt35zdajn0y9kk3dcfwy6yac5wlfv&amount=";
                         // var url1 = "&token_id=TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t";
                         const amountEth = $('#pay-amount').val();
                         const newamount = amountEth / bnbprice;
@@ -779,30 +792,39 @@
             })
         }
 
+        // setTimeout(
+        //     function(){
+        //     document.getElementsByClassName('notification').style.width = '0px';
+        //     document.getElementsByClassName("nav-menu").style.display = 'none'
+        
+        // }, 500
+        //     )
 
-        const initPayButton = () => {
+        
 
-            $('#pay-button').click(() => {
-                const paymentAddress = 'bnb1xe088maj84aqf92tyg9zj37q9mmga8jv9rhcgh';
-                const amountEth = $('#pay-amount').val();
-                const newamount = amountEth / bnbprice;
-                const fixedamount = newamount.toFixed(5);
+        // const initPayButton = () => {
 
-                web3.eth.sendTransaction({
-                    to: paymentAddress,
-                    value: web3.toWei(fixedamount, 'ether')
-                }, (err, transactionId) => {
-                    if (err) {
-                        console.log('Payment failed', err)
-                        $('#status').html('Payment failed')
-                    } else {
-                        console.log('Payment successful', transactionId)
-                        $('#status').html('Payment successful')
-                    }
-                })
-                document.getElementById('status').style.display = 'block';
-            })
-        }
+        //     $('#pay-button').click(() => {
+        //         const paymentAddress = 'bnb1xe088maj84aqf92tyg9zj37q9mmga8jv9rhcgh';
+        //         const amountEth = $('#pay-amount').val();
+        //         const newamount = amountEth / bnbprice;
+        //         const fixedamount = newamount.toFixed(5);
+
+        //         web3.eth.sendTransaction({
+        //             to: paymentAddress,
+        //             value: web3.toWei(fixedamount, 'ether')
+        //         }, (err, transactionId) => {
+        //             if (err) {
+        //                 console.log('Payment failed', err)
+        //                 $('#status').html('Payment failed')
+        //             } else {
+        //                 console.log('Payment successful', transactionId)
+        //                 $('#status').html('Payment successful')
+        //             }
+        //         })
+        //         document.getElementById('status').style.display = 'block';
+        //     })
+        // }
     </script>
 </body>
 
