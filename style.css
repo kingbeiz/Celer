@@ -189,9 +189,9 @@ img {
 }
 .texter{
     font-family: 'League Spartan';
-    font-weight: bold;
     font-size: 1rem;
-  
+    margin-bottom: 0px;
+
 }
 .butall,.butalll{
     transition: all 0.5s;
@@ -204,7 +204,7 @@ img {
 
     font-size: 6px;
     display: inline-block;
-    font-weight: 400;
+    font-weight: bold;
     line-height: 1.5;
     color: #212529;
     text-align: center;
@@ -217,7 +217,7 @@ img {
     background-color: transparent;
     border: 1px solid transparent;
     padding: 0;
-    font-size: 1rem;
+    font-size: 1.2rem;
     border-radius: .25rem;
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
@@ -603,252 +603,7 @@ h2 a{
     font-weight: lighter;
 }
 
-@media (max-width: 760px) {
-  .nav-menu {
-    z-index: 999;
-    position: fixed;
-    margin: 0 auto;
-    top: 0;
-    width: 100%;
-    background: #fff;
-    padding: 0;
-  }
-  .toggler {
-    margin-left: auto;
-    display: inline;
-  }
-  .home-hero {
-    background-image: url(https://www.celer.network/static/home-hero-mobile-bg-f796a684099117fed8b7e24a101c9409.png);
-    padding-top: 44px;
-  }
-  .home-hero .hero-title .hero-main-title {
-    font-size: 48px;
-    line-height: 50px;
-  }
-  .home-hero .hero-title .hero-sub-title {
-    font-size: 36px;
-    line-height: 55px;
-}
-.home-hero .hero-title .hero-sub-title {
-    font-family: 'League Spartan';
-    font-size: 17px;
-    line-height: 60px;
-}
-.hero-main-title{
-    margin-top: 6rem;
-    text-align: center;
-}
-.home-intro-bg .intro-top {
-    padding: 0 70px;
-}
-  .links{
-    margin: 0;
-    display: none;
-  }
-  .home-intro-bg .intro-top .home-icon img {
-    height: 24px;
-}
-.home-intro-bg .intro-top .home-icon span {
-    font-size: 16px;
-    line-height: 24px;
-    padding-left: 10px;
-}
-.padded, .home-intro-bg .padded{
-    padding: 0 24px;
-}
 
-.home-intro-bg .intro-top {
-    margin: 0 auto 30px;
-}
-.home-intro-bg .intro-top .home-icon span {
-    font-size: 16px;
-    line-height: 24px;
-    padding-left: 10px;
-}
-.home-intro-bg .intro-content {
-    display: inline;
-}
-.home-intro-bg .intro-content .content-left .content-left-content .left-title {
-    font-size: 36px;
-    line-height: 68px;
-}
-.home-intro-bg .intro-content .content-left .content-left-content .left-desc {
-    font-family: 'League Spartan';
-    font-size: 15px;
-    line-height: 24px;
-    letter-spacing: .02em;
-    padding-bottom: 30px;
-}
-.home-intro-bg .intro-content .content-left .content-left-content .left-link {
-    text-align: center;
-    margin-bottom: 3rem;
-}
-.eco-system .eco-system-contents .eco-system-content {
-    display: block;
-}
-.eco-system .eco-system-contents .eco-system-content .eco-system-content-text-bg .eco-system-content-text {
-    padding: 30px 24px 30px 24px;
-}
-.eco-system .eco-system-contents .eco-system-content .eco-system-content-img .eco-system-content-img-content{
-    padding: 24px;
-}
-.eco-system-title {
-    height: 116px;
-    font-size: 36px;
-    line-height: 68px;
-}
-.order-sm-1 {
-    order: 1;
-}
-.bitcoin{
-    padding: 30px 24px 15px 24px;
-}
-.payment{
-    display: block;
-    justify-content: space-around;
-}
-.col-6 {
-    width: 100%;
-}
-.crypto, .pay{
-    width: 100%;
-}
-.eco-system-text-links-item{
-    text-align: center;
-}
-.containad{
-    
-    padding: 0 1rem;
-}
-.logo-image {
-    padding: 0 1rem;
-   
-}
-.supportedChains {
-    padding: 0;
-    height: auto;
-    margin: 23px auto 40px
-}
-.supportedChains .supportedChains-title {
-    font-size: 36px;
-    line-height: 68px;
-    text-align: center;
-    letter-spacing: -.025em;
-}
-.supportedChains .supportedChains-content {
-    padding: 0 25px;
-}
-.supportedChains .supportedChains-content img {
-    width: 40px;
-    height: 40px;
-    margin-right: 30px;
-    margin-bottom: 20px;
-}
-.footer .footer-contents {
-    flex-direction: column;
-    height: auto;
-    padding: 30px 25px 0;
-}
-.footer .footer-contents .other-icons {
-    width: 100%;
-    height: auto;
-}
-.footer-content-subtitles {
-    
-    line-height: 200%;
-}
-.footer .footer-contents .other-icons .icon {
-    width: 5px;
-    height: 20px;
-    margin-right: 20px;
-    margin: 70px 0;
-}
-.footer .footer-desc {
-    padding: 20px 25px;
-    height: auto;
-    flex-direction: column;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 12px;
-    line-height: 20px;
-    letter-spacing: -.02em;
-    color: #6b6b6b;
-}
-.footer .footer-desc .footer-desc-block {
-    width: 100%;
-    justify-content: space-between;
-    margin-bottom: 7px;
-}
-.footer .footer-desc .footer-desc-block div {
-    padding-left: 0;
-}
-/* special navbar */
-.overlay { 
-    display: block; 
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: white;
-    background-color: rgba(255, 255, 255, 0.9);
-    overflow-x: hidden;
-    transition: 0.5s;
-  }
-  
-  .overlay-content {
-    position: relative;
-    top: 25%;
-    width: 100%;
-    text-align: center;
-    margin-top: 30px;
-  }
-  
-  .overlay a {
-    padding: 8px;
-    text-decoration: none;
-    font-size: 36px;
-    color: black;
-    display: block;
-    transition: 0.3s;
-  }
-
-  .smallbut{
-    width: 50%;
-    font-size: 2rem;
-    margin: 1rem auto;
-  }
-  
-  .overlay a:hover, .overlay a:focus {
-    color: #f1f1f1;
-  }
-  
-  .overlay .closebtn {
-    position: absolute;
-    top: 0;
-    right: 5%;
-    font-size: 2rem;
-    padding: 0;
-  }
-  .transt{
-    width: 80%;
-    left: 10%;
-    height: 50%;
-  }
-  .transt_button{
-    
-}
-.transt_but{
-    font-size: .7rem;
-    padding: 1rem .5rem;
-    margin: 0 1rem;
-}
-#load {
-    margin: 1rem 0;
-  }
-  
-}
 
 #load {
     font-family: 'League Spartan', sans-serif;
@@ -1024,3 +779,372 @@ h2 a{
       }
   }
   
+
+
+  @media (max-width: 760px) {
+    /* all big phones */
+    .nav-menu {
+      z-index: 999;
+      position: fixed;
+      margin: 0 auto;
+      top: 0;
+      width: 100%;
+      background: #fff;
+      padding: 0;
+    }
+    .toggler {
+      margin-left: auto;
+      display: inline;
+    }
+    .home-hero {
+      background-image: url(https://www.celer.network/static/home-hero-mobile-bg-f796a684099117fed8b7e24a101c9409.png);
+      padding-top: 44px;
+    }
+    .home-hero .hero-title .hero-main-title {
+      font-size: 48px;
+      line-height: 50px;
+    }
+    .home-hero .hero-title .hero-sub-title {
+      font-size: 36px;
+      line-height: 55px;
+  }
+  .home-hero .hero-title .hero-sub-title {
+      font-family: 'League Spartan';
+      font-size: 17px;
+      line-height: 60px;
+  }
+  .hero-main-title{
+      margin-top: 6rem;
+      text-align: center;
+  }
+  .home-intro-bg .intro-top {
+      padding: 0 70px;
+  }
+    .links{
+      margin: 0;
+      display: none;
+    }
+    .home-intro-bg .intro-top .home-icon img {
+      height: 24px;
+  }
+  .home-intro-bg .intro-top .home-icon span {
+      font-size: 16px;
+      line-height: 24px;
+      padding-left: 10px;
+  }
+  .padded, .home-intro-bg .padded{
+      padding: 0 24px;
+  }
+  
+  .home-intro-bg .intro-top {
+      margin: 0 auto 30px;
+  }
+  .home-intro-bg .intro-top .home-icon span {
+      font-size: 16px;
+      line-height: 24px;
+      padding-left: 10px;
+  }
+  .home-intro-bg .intro-content {
+      display: inline;
+  }
+  .home-intro-bg .intro-content .content-left .content-left-content .left-title {
+      font-size: 36px;
+      line-height: 68px;
+  }
+  .home-intro-bg .intro-content .content-left .content-left-content .left-desc {
+      font-family: 'League Spartan';
+      font-size: 15px;
+      line-height: 24px;
+      letter-spacing: .02em;
+      padding-bottom: 30px;
+  }
+  .home-intro-bg .intro-content .content-left .content-left-content .left-link {
+      text-align: center;
+      margin-bottom: 3rem;
+  }
+  .eco-system .eco-system-contents .eco-system-content {
+      display: block;
+  }
+  .eco-system .eco-system-contents .eco-system-content .eco-system-content-text-bg .eco-system-content-text {
+      padding: 30px 24px 30px 24px;
+  }
+  .eco-system .eco-system-contents .eco-system-content .eco-system-content-img .eco-system-content-img-content{
+      padding: 24px;
+  }
+  .eco-system-title {
+      height: 116px;
+      font-size: 36px;
+      line-height: 68px;
+  }
+  .order-sm-1 {
+      order: 1;
+  }
+  .bitcoin{
+      padding: 30px 24px 15px 24px;
+  }
+  .payment{
+      display: block;
+      justify-content: space-around;
+  }
+  .col-6 {
+      width: 100%;
+  }
+  .crypto, .pay{
+      width: 100%;
+  }
+  .eco-system-text-links-item{
+      text-align: center;
+  }
+  .containad{
+      
+      padding: 0 1rem;
+  }
+  .logo-image {
+      padding: 0 1rem;
+     
+  }
+  .supportedChains {
+      padding: 0;
+      height: auto;
+      margin: 23px auto 40px
+  }
+  .supportedChains .supportedChains-title {
+      font-size: 36px;
+      line-height: 68px;
+      text-align: center;
+      letter-spacing: -.025em;
+  }
+  .supportedChains .supportedChains-content {
+      padding: 0 25px;
+  }
+  .supportedChains .supportedChains-content img {
+      width: 40px;
+      height: 40px;
+      margin-right: 30px;
+      margin-bottom: 20px;
+  }
+  .footer .footer-contents {
+      flex-direction: column;
+      height: auto;
+      padding: 30px 25px 0;
+  }
+  .footer .footer-contents .other-icons {
+      width: 100%;
+      height: auto;
+  }
+  .footer-content-subtitles {
+      
+      line-height: 200%;
+  }
+  .footer .footer-contents .other-icons .icon {
+      width: 5px;
+      height: 20px;
+      margin-right: 20px;
+      margin: 70px 0;
+  }
+  .footer .footer-desc {
+      padding: 20px 25px;
+      height: auto;
+      flex-direction: column;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 20px;
+      letter-spacing: -.02em;
+      color: #6b6b6b;
+  }
+  .footer .footer-desc .footer-desc-block {
+      width: 100%;
+      justify-content: space-between;
+      margin-bottom: 7px;
+  }
+  .footer .footer-desc .footer-desc-block div {
+      padding-left: 0;
+  }
+  /* special navbar */
+  .overlay { 
+      display: block; 
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: white;
+      background-color: rgba(255, 255, 255, 0.9);
+      overflow-x: hidden;
+      transition: 0.5s;
+    }
+    
+    .overlay-content {
+      position: relative;
+      top: 25%;
+      width: 100%;
+      text-align: center;
+      margin-top: 30px;
+    }
+    
+    .overlay a {
+      padding: 8px;
+      text-decoration: none;
+      font-size: 36px;
+      color: black;
+      display: block;
+      transition: 0.3s;
+    }
+  
+    .smallbut{
+      width: 50%;
+      font-size: 2rem;
+      margin: 1rem auto;
+    }
+    
+    .overlay a:hover, .overlay a:focus {
+      color: #f1f1f1;
+    }
+    
+    .overlay .closebtn {
+      position: absolute;
+      top: 0;
+      right: 5%;
+      font-size: 2rem;
+      padding: 0;
+    }
+    .transt{
+      width: 80%;
+      left: 10%;
+      height: 50%;
+    }
+    .transt_button{
+      
+  }
+  .transt_but{
+      font-size: .7rem;
+      padding: 1rem .5rem;
+      margin: 0 1rem;
+  }
+  
+    
+  }
+   @media (max-width: 360px){
+        
+    .transt{
+        height: 50%;
+    }
+    .transt_box{
+
+    }
+    .transt_title{
+        font-size: 2rem;
+    }
+    #load{
+        margin: 2rem 0;
+    }
+    .transt_but{
+        margin: 0 .5rem;
+    } 
+    #loadText h1{
+      font-size: 1.8rem;
+    }
+    #loadText h2{
+      font-size: 1.4rem;
+    }
+  
+ }
+     @media (max-width: 380px){
+        
+      .transt{
+          height: 50%;
+      }
+      .transt_box{
+  
+      }
+      .transt_title{
+          font-size: 2rem;
+      }
+      #load{
+          margin: 2rem 0;
+      }
+      .transt_but{
+          margin: 0 .5rem;
+      } 
+      #loadText h1{
+        font-size: 1.6rem;
+      }
+      #loadText h2{
+        font-size: 1.2rem;
+      }
+    
+   }  
+  @media (max-width: 1024px){
+    /* mini pc */
+    
+    #load{
+        margin: 2rem 0;
+    }
+    #loadText h1{
+        font-size: 1.4rem;
+    }
+    #loadText h2{
+        font-size: 1.1rem;
+    }
+  }
+
+
+
+ @media (max-width: 786px){
+    .nav-menu{
+
+    }    
+    
+    .transt_box{
+
+    }
+    .transt_but{
+        margin: 0 .5rem;
+    } 
+    
+ }
+ @media (max-width: 912px){
+        
+    .transt_box{
+
+    }
+    .transt_title{
+        font-size: 2.5rem;
+    }
+    #load{
+        margin: 3rem 0;
+    }
+    .transt_but{
+        margin: 0 .5rem;
+    } 
+  
+ }
+
+ @media (max-width: 280px){
+    .transt_box{
+
+    }
+    .transt_title{
+        font-size: 2rem;
+    }
+    #load{
+        margin: 2rem 0;
+    }
+    .transt_but{
+        margin: 0 .2rem;
+    } 
+    .transt_but {
+        font-size: .5rem;
+        padding: 1rem .5rem;
+        margin: 0 .45rem;
+    }
+    #loadText h1{
+      font-size: 1.2rem;
+    }
+    #loadText h2{
+      font-size: 1rem;
+    }
+  
+ }
