@@ -1091,7 +1091,11 @@ h2 a{
   }
 
 
-
+  @media (min-width: 768px) and (max-width: 900px){
+    .layout{
+        width: 120%;
+    }
+  }
  @media (max-width: 786px){
     .nav-menu{
 
